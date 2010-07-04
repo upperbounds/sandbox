@@ -1,0 +1,7 @@
+target*
+project/boot*
+project/build/target*
+lib*
+lib_managed*
+repository*
+repository.xml 
