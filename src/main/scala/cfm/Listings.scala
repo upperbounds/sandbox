@@ -76,15 +76,7 @@ class ColId(id: Int) extends IntField(id) with Domain[Int] {
 object Listing extends Schema {
   val listings = table[Listing]
   val restaurants = from(listings)(p => where(p.clazz === "restaurants") select (p))
-  import org.squeryl.SessionFactory
-  import org.squeryl.adapters._
 
-  Class.forName("com.mysql.jdbc.Driver");
-
-  SessionFactory.concreteFactory = Some(() =>
-    Session.create(
-      java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3308/db"),
-      new MySQLAdapter()))
 }
 
 class Listing(val listingId: ColId, val slug: Slug, val title: Title, val elemId: ColId, val clazz: KrangClass) {

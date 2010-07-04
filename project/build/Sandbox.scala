@@ -19,6 +19,8 @@ class SandboxProject(info: ProjectInfo) extends DefaultProject(info) with IdeaPr
   // test dependencies
   val scalaTest = "org.scalatest" % "scalatest" % "1.2-for-scala-2.8.0.RC6-SNAPSHOT" % "test"
   val scalaToolsSnapshots = "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
+
+  val h2 = "com.h2database" % "h2" % "1.2.127" % "provided"
   
   // actions
   lazy val hello = task{println("running hello"); None}     
