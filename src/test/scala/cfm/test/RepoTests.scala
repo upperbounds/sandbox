@@ -2,7 +2,7 @@ package cfm
 
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
-import Repo._
+import cfm.Repo._
 
 class StackSpec extends FlatSpec with ShouldMatchers {
 
