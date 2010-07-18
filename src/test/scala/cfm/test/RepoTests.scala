@@ -8,12 +8,13 @@ import java.io.{FileInputStream, FileReader}
 import javax.jcr.{ValueFactory, Session, SimpleCredentials}
 
 class StackSpec extends FlatSpec with ShouldMatchers {
+  setProps
   val creds = new SimpleCredentials("username", "password".toCharArray())
   
 
   "A Repo" should "iterate over nodes" in {
     setUpRepo
-    setProps
+
     val r = new TransientRepoAdaptor()
     val s = r.repo.login(creds)
 
@@ -26,7 +27,7 @@ class StackSpec extends FlatSpec with ShouldMatchers {
     tearDownRepo
   }
   def setUpRepo: Unit = {
-    setProps
+
     val r = new TransientRepoAdaptor()
     val s = r.repo.login(creds)
     try {
@@ -55,7 +56,7 @@ class StackSpec extends FlatSpec with ShouldMatchers {
   }
 
   def tearDownRepo: Unit = {
-    setProps
+
     val r = new TransientRepoAdaptor()
     val s = r.repo.login(creds)
     for{node <- s.getRootNode.getNodes if (!node.getName.equals("jcr:system"))} node.remove
