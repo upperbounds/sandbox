@@ -1,30 +1,90 @@
 ----------------------------------------------------------------
-2010-07-17 22:57:54.997 GMT:
- Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-0129-e2a0-c898-000001a12140
+2010-07-18 16:06:57.681 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-0129-e64e-e6cc-000002376cc8
 on database directory /Users/quadvillian/sandbox/src/test/repository/version/db  
 
 Database Class Loader started - derby.database.classpath=''
 ----------------------------------------------------------------
-2010-07-17 22:57:57.755 GMT:
- Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance ac3880cc-0129-e2a0-c898-000001a12140
+2010-07-18 16:06:58.747 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance e0b94027-0129-e64e-e6cc-000002376cc8
 on database directory /Users/quadvillian/sandbox/src/test/repository/workspaces/default/db  
 
 Database Class Loader started - derby.database.classpath=''
 ----------------------------------------------------------------
-2010-07-17 22:58:00.389 GMT:
- Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance e460818c-0129-e2a0-c898-000001a12140
+2010-07-18 16:07:00.231 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance da398044-0129-e64e-e6cc-000002376cc8
 on database directory /Users/quadvillian/sandbox/src/test/repository/workspaces/security/db  
 
 Database Class Loader started - derby.database.classpath=''
 
-2010-07-17 22:58:01.773 GMT:
-Shutting down instance ac3880cc-0129-e2a0-c898-000001a12140
+2010-07-18 16:07:02.543 GMT:
+Shutting down instance e0b94027-0129-e64e-e6cc-000002376cc8
 ----------------------------------------------------------------
 
-2010-07-17 22:58:01.930 GMT:
-Shutting down instance e460818c-0129-e2a0-c898-000001a12140
+2010-07-18 16:07:02.587 GMT:
+Shutting down instance da398044-0129-e64e-e6cc-000002376cc8
 ----------------------------------------------------------------
 
-2010-07-17 22:58:02.043 GMT:
-Shutting down instance a816c00e-0129-e2a0-c898-000001a12140
+2010-07-18 16:07:02.600 GMT:
+Shutting down instance a816c00e-0129-e64e-e6cc-000002376cc8
+----------------------------------------------------------------
+----------------------------------------------------------------
+2010-07-18 16:07:02.753 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 65f6406f-0129-e64e-e6cc-000002376cc8
+on database directory /Users/quadvillian/sandbox/src/test/repository/version/db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2010-07-18 16:07:02.890 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 40f70088-0129-e64e-e6cc-000002376cc8
+on database directory /Users/quadvillian/sandbox/src/test/repository/workspaces/default/db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2010-07-18 16:07:03.365 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 8c9400a1-0129-e64e-e6cc-000002376cc8
+on database directory /Users/quadvillian/sandbox/src/test/repository/workspaces/security/db  
+
+Database Class Loader started - derby.database.classpath=''
+
+2010-07-18 16:07:03.856 GMT:
+Shutting down instance 40f70088-0129-e64e-e6cc-000002376cc8
+----------------------------------------------------------------
+
+2010-07-18 16:07:03.880 GMT:
+Shutting down instance 8c9400a1-0129-e64e-e6cc-000002376cc8
+----------------------------------------------------------------
+
+2010-07-18 16:07:03.917 GMT:
+Shutting down instance 65f6406f-0129-e64e-e6cc-000002376cc8
+----------------------------------------------------------------
+----------------------------------------------------------------
+2010-07-18 16:07:04.006 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 292a80bc-0129-e64e-e6cc-000002376cc8
+on database directory /Users/quadvillian/sandbox/src/test/repository/version/db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2010-07-18 16:07:04.149 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 560c80d5-0129-e64e-e6cc-000002376cc8
+on database directory /Users/quadvillian/sandbox/src/test/repository/workspaces/default/db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2010-07-18 16:07:04.466 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance c38ac0ee-0129-e64e-e6cc-000002376cc8
+on database directory /Users/quadvillian/sandbox/src/test/repository/workspaces/security/db  
+
+Database Class Loader started - derby.database.classpath=''
+
+2010-07-18 16:07:04.908 GMT:
+Shutting down instance 560c80d5-0129-e64e-e6cc-000002376cc8
+----------------------------------------------------------------
+
+2010-07-18 16:07:04.943 GMT:
+Shutting down instance c38ac0ee-0129-e64e-e6cc-000002376cc8
+----------------------------------------------------------------
+
+2010-07-18 16:07:04.973 GMT:
+Shutting down instance 292a80bc-0129-e64e-e6cc-000002376cc8
 ----------------------------------------------------------------

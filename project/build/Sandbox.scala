@@ -8,11 +8,13 @@ class SandboxProject(info: ProjectInfo) extends DefaultProject(info) with IdeaPr
   
   val jcr = "javax.jcr" % "jcr" % "2.0" % "compile"  
   val squerly = "org.squeryl" % "squeryl_2.8.0" % "0.9.4beta8" % "compile" 
-  val jackrabbit = "org.apache.jackrabbit" %  "jackrabbit-core" % "2.1.0" % "compile" 
+  val jackrabbit = "org.apache.jackrabbit" %  "jackrabbit-core" % "2.1.0" % "compile"
+  
   val slf4jLog4j = "org.slf4j" % "slf4j-log4j12" % "1.6.0" % "compile"
   
   val jcrRmi = "org.apache.jackrabbit" % "jackrabbit-jcr-rmi" % "2.0.0" % "compile"  
   val slingJson ="org.apache.sling" % "org.apache.sling.commons.json" % "2.0.4-incubator" % "compile"
+//  val dayGFX = "com.day.commons" % "day-commons-gfx" % "2.0.13" % "compile"
    
   val xalan = "xalan" % "xalan" % "2.7.1" % "compile"
   

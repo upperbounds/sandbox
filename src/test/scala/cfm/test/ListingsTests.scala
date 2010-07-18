@@ -21,7 +21,7 @@ class StackSpec extends FlatSpec with ShouldMatchers {
     import org.squeryl.customtypes._
     import cfm.Listing._
     SessionFactory.newSession.bindToCurrentThread
-    Listing.create
+   // Listing.create
     val restaurants = from(listings)(p => where(p.clazz === "restaurants") select (p))
   }
 }

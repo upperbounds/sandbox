@@ -1,0 +1,5 @@
+<nym  = 'http://www.nymag.com/1.0'>
+
+[nym:ImageInfo] > nt:file
+mixin
+- nym:cropInfo (long) multiple
