@@ -15,19 +15,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="da911785-d52d-4709-8c02-ef000d811e21" name="Default" comment="mostly test setup">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/project/build.properties" afterPath="$PROJECT_DIR$/project/plugins/project/build.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala" afterPath="$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/SaveableXml.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/SaveableXml.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaProject.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaProject.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaModuleDescriptor.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaModuleDescriptor.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.iws" afterPath="$PROJECT_DIR$/sandbox.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.ipr" afterPath="$PROJECT_DIR$/sandbox.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/sbt_project_definition.iml" afterPath="$PROJECT_DIR$/project/sbt_project_definition.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaProjectDescriptor.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaProjectDescriptor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/ProjectPaths.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/ProjectPaths.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaPlugin.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaPlugin.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.iml" afterPath="$PROJECT_DIR$/sandbox.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/SbtProjectDefinitionIdeaModuleDescriptor.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/SbtProjectDefinitionIdeaModuleDescriptor.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala" afterPath="$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/cfm/JCRAdaptor.scala" afterPath="$PROJECT_DIR$/src/main/scala/cfm/JCRAdaptor.scala" />
     </list>
     <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path="$USER_HOME_GRAILS$/" />
@@ -94,7 +85,7 @@
       <file leaf-file-name="RepoTests.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="19" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+            <state line="37" column="69" selection-start="981" selection-end="996" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,19 +109,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JCRAdaptor.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JCRAdaptor.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/cfm/JCRAdaptor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+            <state line="30" column="90" selection-start="955" selection-end="955" vertical-scroll-proportion="0.49562684">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repository.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="repository.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/cfm/repository.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="78" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.41205534">
+            <state line="35" column="78" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,6 +145,7 @@
         <option value="$PROJECT_DIR$/project/build/Sandbox.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/nym.cnd" />
         <option value="$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/cfm/JCRAdaptor.scala" />
       </list>
     </option>
   </component>
@@ -841,23 +833,23 @@
         <state line="4" column="4" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cfm/repository.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="78" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+        <state line="37" column="69" selection-start="981" selection-end="996" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/cfm/JCRAdaptor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/cfm/repository.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="78" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.41205534">
+        <state line="30" column="90" selection-start="955" selection-end="955" vertical-scroll-proportion="0.49562684">
           <folding />
         </state>
       </provider>

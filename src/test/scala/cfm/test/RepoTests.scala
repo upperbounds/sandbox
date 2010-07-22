@@ -2,7 +2,7 @@ package cfm.test
 
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
-//import cfm.Repo._
+import cfm.Repo._
 import org.apache.jackrabbit.commons.cnd.CndImporter
 import java.io.{FileInputStream, FileReader}
 import javax.jcr.{ValueFactory, Session, SimpleCredentials}
@@ -46,7 +46,6 @@ class StackSpec extends FlatSpec with ShouldMatchers {
       file.addNode("jcr:content", "nt:resource").setProperty("jcr:data", vf.createBinary(new FileInputStream(this.getClass.getResource(testFile).getFile)))
       file.addMixin("nym:ImageInfo")
       file.setProperty("nym:cropInfo", List(vf.createValue(1),vf.createValue(2),vf.createValue(3),vf.createValue(4)).toArray)
-      //      file.setProperty("nym:cropInfo2", "blah")
 
       s.save
     }
