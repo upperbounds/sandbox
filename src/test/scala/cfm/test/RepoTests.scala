@@ -1,11 +1,12 @@
-package cfm
+package cfm.test
 
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
-import cfm.Repo._
+//import cfm.Repo._
 import org.apache.jackrabbit.commons.cnd.CndImporter
 import java.io.{FileInputStream, FileReader}
 import javax.jcr.{ValueFactory, Session, SimpleCredentials}
+import cfm.TransientRepoAdaptor
 
 class StackSpec extends FlatSpec with ShouldMatchers {
   setProps

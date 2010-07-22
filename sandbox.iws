@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CCaseConfig">
+    <option name="checkoutReserved" value="false" />
+    <option name="markExternalChangeAsUpToDate" value="true" />
+    <option name="checkInUseHijack" value="true" />
+    <option name="useUcmModel" value="true" />
+    <option name="synchOutside" value="false" />
+    <option name="isHistoryResticted" value="true" />
+    <option name="useIdenticalSwitch" value="true" />
+    <option name="synchActivitiesOnRefresh" value="true" />
+    <option name="lastScr" value="" />
+    <option name="scrTextFileName" value="" />
+    <option name="historyRevisionsNumber" value="4" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="da911785-d52d-4709-8c02-ef000d811e21" name="Default" comment="mostly test setup">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.iws" afterPath="$PROJECT_DIR$/sandbox.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/project/build.properties" afterPath="$PROJECT_DIR$/project/plugins/project/build.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala" afterPath="$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/SaveableXml.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/SaveableXml.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaProject.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaProject.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaModuleDescriptor.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaModuleDescriptor.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.iws" afterPath="$PROJECT_DIR$/sandbox.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.ipr" afterPath="$PROJECT_DIR$/sandbox.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/sbt_project_definition.iml" afterPath="$PROJECT_DIR$/project/sbt_project_definition.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaProjectDescriptor.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaProjectDescriptor.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/ProjectPaths.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/ProjectPaths.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaPlugin.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/IdeaPlugin.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox.iml" afterPath="$PROJECT_DIR$/sandbox.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/SbtProjectDefinitionIdeaModuleDescriptor.scala" afterPath="$PROJECT_DIR$/project/plugins/src_managed/sbt-idea-plugin-0.1-SNAPSHOT/SbtProjectDefinitionIdeaModuleDescriptor.scala" />
     </list>
-    <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
+    <ignored path="$USER_HOME_GRAILS$/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +91,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RepoTests.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RepoTests.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="12" selection-start="793" selection-end="793" vertical-scroll-proportion="0.41551247">
+            <state line="5" column="19" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,16 +121,16 @@
       <file leaf-file-name="JCRAdaptor.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/cfm/JCRAdaptor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+            <state line="8" column="24" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListingsTests.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/cfm/test/ListingsTests.scala">
+      <file leaf-file-name="repository.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/cfm/repository.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
+            <state line="35" column="78" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.41205534">
               <folding />
             </state>
           </provider>
@@ -156,11 +179,13 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -176,7 +201,6 @@
     </navigator>
     <panes>
       <pane id="Favorites" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -268,9 +292,35 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="sandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sandbox" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository.scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -287,7 +337,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,6 +365,48 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Listings.scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sandbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JCRAdaptor.scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -352,10 +452,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imageManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -384,28 +480,11 @@
               <option name="myItemId" value="lib_managed" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala_2.8.0.RC6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sandbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib_managed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -413,13 +492,13 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -440,6 +519,15 @@
         <option name="SBT.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" class_name="" html_or_swf_file_path="" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" port="0" run_mode="HtmlOrSwfFile" scope="Class" socket_policy_port="0" url_to_launch="http://">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="SpecsRunConfiguration" factoryName="Specs">
       <module name="" />
       <setting name="path" value="" />
@@ -449,15 +537,6 @@
       <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <setting name="sysFilter" value=".*" />
       <setting name="exampleFilter" value=".*" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" class_name="" html_or_swf_file_path="" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" port="0" run_mode="HtmlOrSwfFile" scope="Class" socket_policy_port="0" url_to_launch="http://">
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -591,7 +670,21 @@
       <Port>5050</Port>
     </configuration>
   </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StarteamConfiguration">
+    <option name="SERVER" value="" />
+    <option name="PORT" value="49201" />
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="PROJECT" value="" />
+    <option name="VIEW" value="" />
+    <option name="ALTERNATIVE_WORKING_PATH" value="" />
+    <option name="LOCK_ON_CHECKOUT" value="false" />
+    <option name="UNLOCK_ON_CHECKIN" value="false" />
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -608,6 +701,10 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
   </component>
+  <component name="Talios.JiraConfigurationComponent" enableIssueTracking="false" autoRefresh="false" useExternalBrowser="false" refreshTimeout="0" annotateissues="false">
+    <servers />
+    <columns />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="da911785-d52d-4709-8c02-ef000d811e21" name="Default" comment="" />
@@ -617,27 +714,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="22" width="1420" height="860" extended-state="0" />
-    <editor active="false" />
+    <frame x="1921" y="1" width="1918" height="1198" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="V1Details" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="V1Integration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32968637" sideWeight="0.6618799" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19592056" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -682,105 +783,81 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/cfm/Listings.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="13" selection-end="94" vertical-scroll-proportion="0.016282225">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="13" selection-end="94" vertical-scroll-proportion="0.016282225" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sandbox.ipr">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.083102494">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.083102494" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sandbox.iws">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.016620498">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.016620498" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib_managed/scala_2.8.0/test/scalatest-1.2.jar!/org/scalatest/CatchReporter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="25" selection-start="47" selection-end="47" vertical-scroll-proportion="0.016282225">
-          <folding />
-        </state>
+        <state line="1" column="25" selection-start="47" selection-end="47" vertical-scroll-proportion="0.016282225" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/test.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="1" selection-start="47" selection-end="84" vertical-scroll-proportion="0.0">
+        <state line="1" column="1" selection-start="47" selection-end="84" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/build/Sandbox.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="2" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/replication.cnd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dam.cnd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="410" selection-end="447" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/sling.cnd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="44" selection-start="1392" selection-end="1392" vertical-scroll-proportion="-12.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/tagging.cnd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/nym.cnd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nymag/imageManagement/ImageCrop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/cfm/JCRAdaptor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+        <state line="8" column="24" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/cfm/test/ListingsTests.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cfm/repository.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/build/Sandbox.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/replication.cnd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/dam.cnd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="410" selection-end="447" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/sling.cnd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="44" selection-start="1392" selection-end="1392" vertical-scroll-proportion="-12.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/tagging.cnd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/nym.cnd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nymag/imageManagement/ImageCrop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/cfm/test/RepoTests.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="12" selection-start="793" selection-end="793" vertical-scroll-proportion="0.41551247">
+        <state line="35" column="78" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.41205534">
           <folding />
         </state>
       </provider>

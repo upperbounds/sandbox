@@ -27,7 +27,7 @@
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
-  <component name="IdProvider" IDEtalkID="1A3B934654BCF6049BA6684D349B552D" />
+  <component name="IdProvider" IDEtalkID="96C2FD80F20CA8997B4261C622289895" />
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />
     <option name="OPTION_SCOPE" value="protected" />
@@ -171,7 +171,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$//sandbox.iml" filepath="$PROJECT_DIR$//sandbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sandbox.iml" filepath="$PROJECT_DIR$/sandbox.iml" />
       <module fileurl="file://$PROJECT_DIR$/project/sbt_project_definition.iml" filepath="$PROJECT_DIR$/project/sbt_project_definition.iml" />
     </modules>
   </component>
