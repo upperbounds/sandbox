@@ -5,4 +5,5 @@ lib*
 lib_managed*
 repository*
 repository.xml
-derby.log 
+derby.log
+sandbox.iws
