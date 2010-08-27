@@ -15,6 +15,20 @@ class SandboxProject(info: ProjectInfo) extends DefaultProject(info) with IdeaPr
   val jcrRmi = "org.apache.jackrabbit" % "jackrabbit-jcr-rmi" % "2.0.0" % "compile"  
   val slingJson ="org.apache.sling" % "org.apache.sling.commons.json" % "2.0.4-incubator" % "compile"
 //  val dayGFX = "com.day.commons" % "day-commons-gfx" % "2.0.13" % "compile"
+
+  val sanselan = "org.apache.sanselan" % "sanselan" % "0.97-incubator" % "compile"
+
+  val damCore = "com.day.cq.dam" % "cq-dam-core" % "5.3.4" % "compile"
+  
+  val crxRmi = "com.day.crx" % "crx-rmi" % "2.0.0" % "compile"
+
+  val nymagRepo = "NYMAG Repo" at "http://crash.nymag.biz:8080/archiva/repository/internal/"
+
+
+//  val akka =
+
+  //val akka_repo = "Akka Maven Repository" at "http://scalablesolutions.se/akka/repository"
+
    
   val xalan = "xalan" % "xalan" % "2.7.1" % "compile"
   

@@ -27,7 +27,7 @@
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
-  <component name="IdProvider" IDEtalkID="96C2FD80F20CA8997B4261C622289895" />
+  <component name="IdProvider" IDEtalkID="3B5EE96D1C9385F3EA7E59E6B0F4DBA6" />
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />
     <option name="OPTION_SCOPE" value="protected" />
@@ -179,7 +179,7 @@
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="Git" />
+    <mapping directory="" vcs="" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
   <component name="libraryTable">
