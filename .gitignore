@@ -3,7 +3,7 @@ project/boot*
 project/build/target*
 lib*
 lib_managed*
-repository*
+#repository*
 repository.xml
 derby.log
 sandbox.iws
