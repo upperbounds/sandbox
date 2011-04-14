@@ -8,4 +8,5 @@ object RedisStorage{
     
     
     def connect = redis.connect
+
 }

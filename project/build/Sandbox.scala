@@ -22,7 +22,7 @@ class SandboxProject(info: ProjectInfo) extends DefaultProject(info) with IdeaPr
   
   val crxRmi = "com.day.crx" % "crx-rmi" % "2.0.0" % "compile"
 
-  val nymagRepo = "NYMAG Repo" at "http://crash.nymag.biz:8080/archiva/repository/internal/"  
+  val nymagRepo = "NYMAG Repo" at "http://build01.nymetro.com:8080/archiva/repository/internal/"
   
   val google = "com.google.guava" % "guava" % "r06"
   

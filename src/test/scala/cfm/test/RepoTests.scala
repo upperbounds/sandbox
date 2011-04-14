@@ -9,6 +9,7 @@ import javax.jcr.{ValueFactory, Session, SimpleCredentials}
 import cfm.TransientRepoAdaptor
 
 class StackSpec extends FlatSpec with ShouldMatchers {
+/*
   setProps
   val creds = new SimpleCredentials("username", "password".toCharArray())
   
@@ -71,7 +72,7 @@ class StackSpec extends FlatSpec with ShouldMatchers {
     System.setProperty("org.apache.jackrabbit.repository.home", repoHome)
     System.setProperty("org.apache.jackrabbit.repository.conf", repoHome + "/repository.xml")
   }
-
+*/
 }
 
 

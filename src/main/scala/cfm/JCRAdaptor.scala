@@ -12,7 +12,7 @@ trait JCRAdaptor {
 
 class TransientRepoAdaptor(creds: Credentials) extends JCRAdaptor {
   val repo = new TransientRepository()
-  lazy val s = repo.login(creds)
+  implicit lazy val s = repo.login(creds)
 }
 
 class RMIRepoAdaptor(val host: String,
@@ -24,7 +24,6 @@ class RMIRepoAdaptor(val host: String,
   def this() = {
     this ("localhost", 1234, "crx", "crx.default", "admin", "admin")
   }
-
   private[this] def getRepo = {}
 
   private def buildUrl(host: String, port: Int, workspace: String) = "//" + host + ":" + port + "/" + workspace
@@ -32,3 +31,7 @@ class RMIRepoAdaptor(val host: String,
   lazy val repo = new ClientRepositoryFactory().getRepository(buildUrl(host, port, appPath))
   val s = repo.login(new SimpleCredentials(userName, password.toCharArray), workSpace)
 }
+
+object RMIRepoAdaptor{
+    def apply() = new RMIRepoAdaptor()
+  }
