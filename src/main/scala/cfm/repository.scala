@@ -3,11 +3,11 @@ package cfm
 import java.util.{Iterator => JIter}
 import javax.jcr.version.{Version, VersionIterator}
 import javax.jcr.nodetype.{NodeType, NodeTypeIterator}
-import javax.jcr.query.{Row, RowIterator}
 import javax.jcr.observation.{Event, EventIterator, EventListener, EventListenerIterator, EventJournal}
 import javax.jcr.security.{AccessControlPolicyIterator, AccessControlPolicy}
 import org.apache.jackrabbit.rmi.client.{ClientRepositoryFactory}
 import javax.jcr._
+import query.{Query, Row, RowIterator}
 
 abstract class Repo(val url: String) {
   var repo: Repository
@@ -114,6 +114,8 @@ object Repo {
     def next: AccessControlPolicy = iter.nextAccessControlPolicy.asInstanceOf[AccessControlPolicy]
   }
 
+  implicit def node2RichNode(n: Node) = new RichNode(n)
+
   def ls(path: String)(implicit s: Session) {
     var t = s.getRootNode.getNode(path)
     for (p <- t.getNodes) {
@@ -121,39 +123,19 @@ object Repo {
     }
   }
 
-//  def collect(node: Node): List[Node] = {
-//    def c(ns: List[Node], nd: Node): List[Node]={
-//     var nodes= nd.getNodes.toList
-//     nodes match {
-//       case Nil =>
-//     }
-//     var ns2: List[Node] = for(n1 <- nodes) yield c(ns, n1)
-//     ns2 ++ ns
-//     }
-//    c(List(), node)
-//  }
-//
-
-    def collect(node: Node): List[Node] = {
-      def c(ns: List[Node], nd: Node): List[Node] = {
-        nd.getNodes.toList match {
-          case Nil => nd :: ns
-          case f: List[Node] =>  nd::  f.flatMap(m =>  c(ns,m))
-        }
-      }
-      c(List(), node)
+  def collect(node: Node, a: Node => Boolean): List[Node] = {
+    def c(ns: List[Node], nd: Node): List[Node] = {
+      nd.getNodes.toList match {
+        case Nil => if(a(nd)) nd :: ns else ns
+        case f: List[Node] => if(a(nd)) nd :: f.flatMap(m => c(ns, m)) else f.flatMap(m => c(ns, m))}
     }
+    c(List(), node)
+  }
 
+  class RichNode(n:Node){
+    def xpath(query: String) = n.getSession.getWorkspace.getQueryManager.createQuery(query, Query.XPATH)
+    def sql(query: String) = n.getSession.getWorkspace.getQueryManager.createQuery(query, Query.SQL)
+  }
 
-  //
-//  def sum(t: Tree): Int = {
-//    def sumAcc(trees: List[Tree], acc: Int): Int = trees match {
-//      case Nil => acc
-//      case Leaf(x) :: rs => sumAcc(rs, x + acc)
-//      case Node(l, r) :: rs => sumAcc(l :: r :: rs, acc)
-//    }
-//    sumAcc(List(t), 0)
-//  }
-
-
+  def collect(node: Node): List[Node] = collect(node, f => true)
 }

@@ -4,7 +4,7 @@ class SandboxProject(info: ProjectInfo) extends DefaultProject(info) with IdeaPr
 { 
     // dependencies 
   val redis = "com.redis" % "redisclient" % "2.8.0.RC7-1.4" % "compile"       
-  val akkaRepo = "Akka Repo" at "http://scalablesolutions.se/akka/repository"
+  val akkaRepo = "Akka Repo" at "http://akka.io/repository/"
   
   val jcr = "javax.jcr" % "jcr" % "2.0" % "compile"  
   val squerly = "org.squeryl" % "squeryl_2.8.0" % "0.9.4beta8" % "compile" 
