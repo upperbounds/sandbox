@@ -7,7 +7,6 @@ import javax.jcr.{Credentials, SimpleCredentials, Repository => JCRRepo}
 trait JCRAdaptor {
   // type Repository <: JCRRepo
   val repo: JCRRepo
-
 }
 
 class TransientRepoAdaptor(creds: Credentials) extends JCRAdaptor {
@@ -24,7 +23,7 @@ class RMIRepoAdaptor(val host: String,
   def this() = {
     this ("localhost", 1234, "crx", "crx.default", "admin", "admin")
   }
-  private[this] def getRepo = {}
+  private[this] def getRepo = {repo}
 
   private def buildUrl(host: String, port: Int, workspace: String) = "//" + host + ":" + port + "/" + workspace
 

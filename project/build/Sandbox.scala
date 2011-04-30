@@ -3,6 +3,7 @@ import sbt._
 class SandboxProject(info: ProjectInfo) extends DefaultProject(info) with IdeaProject
 {
   var jackrabbitVersion = "2.2.4"
+  val dispatchVersion = "0.8.0"
     // dependencies 
   val redis = "com.redis" % "redisclient" % "2.8.0.RC7-1.4" % "compile"       
   val akkaRepo = "Akka Repo" at "http://akka.io/repository/"
@@ -25,7 +26,9 @@ class SandboxProject(info: ProjectInfo) extends DefaultProject(info) with IdeaPr
 
   val nymagRepo = "NYMAG Repo" at "http://build01.nymetro.com:8080/archiva/repository/internal/"
   
-  val google = "com.google.guava" % "guava" % "r06"
+  val google = "com.google.guava" % "guava" % "r09"
+
+  var dispatch = "net.databinder" %% "dispatch-http" % dispatchVersion
   
  override def compileOptions = super.compileOptions ++ Seq(Unchecked)
 
