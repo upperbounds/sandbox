@@ -1,18 +1,19 @@
 import sbt._
 
 class SandboxProject(info: ProjectInfo) extends DefaultProject(info) with IdeaProject
-{ 
+{
+  var jackrabbitVersion = "2.2.4"
     // dependencies 
   val redis = "com.redis" % "redisclient" % "2.8.0.RC7-1.4" % "compile"       
   val akkaRepo = "Akka Repo" at "http://akka.io/repository/"
   
   val jcr = "javax.jcr" % "jcr" % "2.0" % "compile"  
   val squerly = "org.squeryl" % "squeryl_2.8.0" % "0.9.4beta8" % "compile" 
-  val jackrabbit = "org.apache.jackrabbit" %  "jackrabbit-core" % "2.1.0" % "compile"
+  val jackrabbit = "org.apache.jackrabbit" %  "jackrabbit-core" % jackrabbitVersion % "compile"
   
   val slf4jLog4j = "org.slf4j" % "slf4j-log4j12" % "1.6.0" % "compile"
   
-  val jcrRmi = "org.apache.jackrabbit" % "jackrabbit-jcr-rmi" % "2.0.0" % "compile"  
+  val jcrRmi = "org.apache.jackrabbit" % "jackrabbit-jcr-rmi" % jackrabbitVersion % "compile"
   val slingJson ="org.apache.sling" % "org.apache.sling.commons.json" % "2.0.4-incubator" % "compile"
 //  val dayGFX = "com.day.commons" % "day-commons-gfx" % "2.0.13" % "compile"
 
