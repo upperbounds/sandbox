@@ -53,3 +53,6 @@ project/boot
 # Pax Runner (for easy OSGi launching)
 runner
 
+repository
+repository.xml
+
