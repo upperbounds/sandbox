@@ -26,7 +26,7 @@ class SandboxProject(info: ProjectInfo) extends DefaultProject(info) with IdeaPr
   
   val google = "com.google.guava" % "guava" % "r06"
   
-
+ override def compileOptions = super.compileOptions ++ Seq(Unchecked)
 
 //  val akka =
 
