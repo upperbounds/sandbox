@@ -97,6 +97,8 @@ object Repo {
 
   class RichSession(s: Session){
     def root() = s.getRootNode
+    def xpath(query: String) = s.getWorkspace.getQueryManager.createQuery(query, Query.XPATH)
+    def sql(query: String) = s.getWorkspace.getQueryManager.createQuery(query, Query.SQL)
   }
 
   class RichNode(n:Node){
