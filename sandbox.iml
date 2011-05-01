@@ -89,7 +89,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/commons-codec-1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/commons-codec-1.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -143,6 +143,15 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/commons-logging-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
           <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/commons-pool-1.3.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -188,6 +197,33 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/dispatch-core_2.8.1-0.8.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/dispatch-futures_2.8.1-0.8.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/dispatch-http_2.8.1-0.8.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
           <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/dom4j-1.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -215,7 +251,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/guava-r06.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/guava-r09.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -225,6 +261,24 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/provided/h2-1.2.127.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/httpclient-4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/httpcore-4.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

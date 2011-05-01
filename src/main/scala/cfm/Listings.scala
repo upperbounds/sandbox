@@ -8,7 +8,7 @@ trait Domain[A] {
   self: CustomType =>
   def label: String
 
-  def validate(a: A): Unit
+  def validate(a: A)
 
   def value: A
   validate(value)

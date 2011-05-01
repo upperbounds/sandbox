@@ -13,9 +13,9 @@ class MDExtractor(val file: File) {
 }
 object MetadataExtractor {
   def main(args: Array[String]) = {
-    var imgs = Thread.currentThread.getContextClassLoader.getResources("images")
+    val imgs = Thread.currentThread.getContextClassLoader.getResources("images")
     for (img <- imgs) {
-      var f = new File(img.toURI)
+      val f = new File(img.toURI)
       f.listFiles.foreach(file => {
         try {
           val md = new MDExtractor(file).extract

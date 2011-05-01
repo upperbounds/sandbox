@@ -12,7 +12,7 @@ class SandboxProject(info: ProjectInfo) extends DefaultProject(info) with IdeaPr
   val squerly = "org.squeryl" % "squeryl_2.8.0" % "0.9.4beta8" % "compile" 
   val jackrabbit = "org.apache.jackrabbit" %  "jackrabbit-core" % jackrabbitVersion % "compile"
   
-  val slf4jLog4j = "org.slf4j" % "slf4j-log4j12" % "1.6.0" % "compile"
+  val slf4jLog4j = "org.slf4j" % "slf4j-log4j12" % "1.6.1" % "compile"
   
   val jcrRmi = "org.apache.jackrabbit" % "jackrabbit-jcr-rmi" % jackrabbitVersion % "compile"
   val slingJson ="org.apache.sling" % "org.apache.sling.commons.json" % "2.0.4-incubator" % "compile"
@@ -29,8 +29,14 @@ class SandboxProject(info: ProjectInfo) extends DefaultProject(info) with IdeaPr
   val google = "com.google.guava" % "guava" % "r09"
 
   var dispatch = "net.databinder" %% "dispatch-http" % dispatchVersion
+  lazy val commonsLogging = "commons-logging" % "commons-logging" % "1.0.3"
   
  override def compileOptions = super.compileOptions ++ Seq(Unchecked)
+
+    override def ivyXML =
+    <dependencies>
+        <exclude module="jcl-over-slf4j"/>
+    </dependencies>
 
 //  val akka =
 

@@ -78,7 +78,7 @@ object Repo {
   implicit def sess2RichSession(s: Session) = new RichSession(s)
 
   def ls(path: String)(implicit s: Session) {
-    var t = s.getRootNode.getNode(path)
+    val t = s.getRootNode.getNode(path)
     for (p <- t.getNodes) {
       println(p.getName)
     }
