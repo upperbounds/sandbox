@@ -2,7 +2,7 @@ import sbt._
 
 class SandboxProject(info: ProjectInfo) extends ParentProject(info) with IdeaProject
 {
-  val web = project("web", "Web Project", new WebappBuild(_))
+  val web = project("webapp", "Web Project", new WebappBuild(_))
   val sandbox  = project("sandbox", "Sandbox", new DefaultProject(_) with IdeaProject{
       
         var jackrabbitVersion = "2.2.4"
@@ -62,6 +62,8 @@ class SandboxProject(info: ProjectInfo) extends ParentProject(info) with IdeaPro
 
   class WebappBuild(info: ProjectInfo) extends DefaultWebProject(info) with IdeaProject
 {
-  val jetty6 = "org.mortbay.jetty" % "jetty" % "6.1.14" % "test"  // jetty is only need for testing
+  val jetty7 = "org.eclipse.jetty" % "jetty-webapp" % "8.0.0.M2" % "test"
+  val gwtDev = "com.google.gwt" % "gwt-dev" % "2.3.0"
+  val gwtUser = "com.google.gwt" % "gwt-user" % "2.3.0"
 }
 }
