@@ -9,8 +9,6 @@ import java.util.{Set => JSet}
 
 class S(indexDirs: List[String]) {
   val idxs = for {i <- indexDirs;
-                  //    if(new File(i).isDirectory)
-                  //dir <- new File(i);
                   segs <- new File(i).listFiles(new SegFilter())
   } yield segs
 
