@@ -2,7 +2,7 @@ package cfm
 
 import org.apache.jackrabbit.core.{TransientRepository}
 import org.apache.jackrabbit.rmi.client.ClientRepositoryFactory
-import javax.jcr.{Credentials, SimpleCredentials, Repository => JCRRepo}
+import javax.jcr.{SimpleCredentials, Credentials, Repository => JCRRepo}
 
 trait JCRAdaptor {
   // type Repository <: JCRRepo
@@ -12,6 +12,9 @@ trait JCRAdaptor {
 class TransientRepoAdaptor(creds: Credentials) extends JCRAdaptor {
   val repo = new TransientRepository()
   implicit lazy val s = repo.login(creds)
+}
+object TransientRepoAdaptor{
+  def apply() = new TransientRepoAdaptor(new SimpleCredentials("admin", "admin".toCharArray))
 }
 
 class RMIRepoAdaptor(val host: String,

@@ -5,8 +5,8 @@ import org.apache.lucene.search.IndexSearcher
 import java.io.File
 
 
-class S {
+class S(indexDir: String) {
   val file: File = new File("/Users/quadvillian/cq-54/crx-quickstart/repository/workspaces/crx.default/index")
-  var is  = new IndexSearcher(FSDirectory.getDirectory(file))
+  var is  = new IndexSearcher(FSDirectory.getDirectory(indexDir))
 
 }

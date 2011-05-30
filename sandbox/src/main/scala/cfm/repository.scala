@@ -92,6 +92,9 @@ object Repo {
     }
     c(List(), node)
   }
+  def printItem(n: Item): Unit = println(n.getPath)
+
+  def printItem(n: Item, f:Item => String):String = {printItem(n); f(n)}
 
   def collect(node: Node): List[Node] = collect(node, f => true)
 
@@ -107,4 +110,5 @@ object Repo {
     def collect() = Repo.collect(n, f => true)
     def collect(a: Node => Boolean) = Repo.collect(n, a)
   }
+
 }
