@@ -109,6 +109,7 @@ object Repo {
     def sql(query: String) = n.getSession.getWorkspace.getQueryManager.createQuery(query, Query.SQL)
     def collect() = Repo.collect(n, f => true)
     def collect(a: Node => Boolean) = Repo.collect(n, a)
+    def hasSNS(): Boolean = n.getNodes().exists(f => f.getIndex > 1)
   }
 
 }
