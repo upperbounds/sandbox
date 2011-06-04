@@ -23,7 +23,7 @@ class SandboxProject(info: ProjectInfo) extends ParentProject(info) with IdeaPro
 
         val sanselan = "org.apache.sanselan" % "sanselan" % "0.97-incubator" % "compile"
 
-        val damCore = "com.day.cq.dam" % "cq-dam-core" % "5.3.4" % "compile"
+//        val damCore = "com.day.cq.dam" % "cq-dam-core" % "5.3.4" % "compile"
 
         val crxRmi = "com.day.crx" % "crx-rmi" % "2.0.0" % "compile"
 
@@ -32,7 +32,9 @@ class SandboxProject(info: ProjectInfo) extends ParentProject(info) with IdeaPro
         val google = "com.google.guava" % "guava" % "r09"
 
         var dispatch = "net.databinder" % "dispatch-http_2.8.1" % dispatchVersion
-        lazy val commonsLogging = "commons-logging" % "commons-logging" % "1.0.3" 
+        lazy val commonsLogging = "commons-logging" % "commons-logging" % "1.0.3"
+
+        val html5 = "nu.validator.htmlparser" % "htmlparser" % "1.2.1"
         
          //override def compileOptions = super.compileOptions ++ Seq(Unchecked)
 
