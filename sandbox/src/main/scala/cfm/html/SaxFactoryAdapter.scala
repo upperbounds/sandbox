@@ -15,6 +15,6 @@ trait SAXFactoryAdapter extends NonBindingFactoryAdapter {
     scopeStack.push(TopScope)
     reader.parse(source)
     scopeStack.pop
-    return rootElem
+    rootElem
   }
 }

@@ -22,39 +22,39 @@ object Repo {
     def position = iter.getPosition
     def nodeSize = iter.getSize
     def skip(num: Long) = iter.skip(num)
-    def remove = iter.remove
+    def remove() = iter.remove()
     def hasNext = iter.hasNext
   }
 
   // iterator implicits
   implicit def NodeItr2Iterator[A](i: NodeIterator): Iterator[Node] = new Iterator[Node] with RangeIter {
     def iter = i;
-    def next: Node = iter.next.asInstanceOf[Node]
+    def next(): Node = iter.next.asInstanceOf[Node]
   }
 
   implicit def PropItr2Iterator[A](i: PropertyIterator): Iterator[Property] = new Iterator[Property] with RangeIter {
     def iter = i;
-    def next: Property = iter.nextProperty.asInstanceOf[Property]
+    def next(): Property = iter.nextProperty.asInstanceOf[Property]
   }
 
   implicit def VersionItr2Iterator[A](i: VersionIterator): Iterator[Version] = new Iterator[Version] with RangeIter {
     def iter = i;
-    def next: Version = iter.nextVersion.asInstanceOf[Version]
+    def next(): Version = iter.nextVersion.asInstanceOf[Version]
   }
 
   implicit def NodeTypeItr2Iterator[A](i: NodeTypeIterator): Iterator[NodeType] = new Iterator[NodeType] with RangeIter {
     def iter = i;
-    def next: NodeType = iter.nextNodeType.asInstanceOf[NodeType]
+    def next(): NodeType = iter.nextNodeType.asInstanceOf[NodeType]
   }
 
   implicit def RowItr2Iterator[A](i: RowIterator): Iterator[Row] = new Iterator[Row] with RangeIter {
     def iter = i;
-    def next: Row = i.nextRow.asInstanceOf[Row]
+    def next(): Row = i.nextRow.asInstanceOf[Row]
   }
 
   implicit def EventItr2Iterator[A](i: EventJournal): Iterator[Event] = new Iterator[Event] with RangeIter {
     def iter = i;
-    def next: Event = iter.nextEvent.asInstanceOf[Event];
+    def next(): Event = iter.nextEvent.asInstanceOf[Event];
     def skipTo(date: Long) = i.skipTo(date)
   }
 
@@ -66,12 +66,12 @@ object Repo {
 
   implicit def EventListenerItr2Iterator[A](i: EventListenerIterator): Iterator[EventListener] = new Iterator[EventListener] with RangeIter {
     def iter = i;
-    def next: EventListener = iter.nextEventListener.asInstanceOf[EventListener]
+    def next(): EventListener = iter.nextEventListener.asInstanceOf[EventListener]
   }
 
   implicit def AccessControlPolicyItr2Iterator[A](i: AccessControlPolicyIterator): Iterator[AccessControlPolicy] = new Iterator[AccessControlPolicy] with RangeIter {
     def iter = i;
-    def next: AccessControlPolicy = iter.nextAccessControlPolicy.asInstanceOf[AccessControlPolicy]
+    def next(): AccessControlPolicy = iter.nextAccessControlPolicy.asInstanceOf[AccessControlPolicy]
   }
 
   implicit def node2RichNode(n: Node) = new RichNode(n)

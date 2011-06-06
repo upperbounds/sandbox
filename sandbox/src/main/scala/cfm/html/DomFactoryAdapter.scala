@@ -21,7 +21,7 @@ trait DOMFactoryAdapter extends NonBindingFactoryAdapter {
     scopeStack.push(TopScope)
     dom2sax.parse()
     scopeStack.pop
-    return rootElem
+    rootElem
   }
 
   /** loads XML from given file */
