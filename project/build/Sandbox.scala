@@ -47,6 +47,8 @@ class SandboxProject(info: ProjectInfo) extends ParentProject(info) with IdeaPro
 
           //val akka_repo = "Akka Maven Repository" at "http://scalablesolutions.se/akka/repository"
 
+          val jenaRepo = "Jena Repo" at "http://openjena.org/repo/"
+
 
           val xalan = "xalan" % "xalan" % "2.7.1" % "compile"
 
@@ -60,6 +62,7 @@ class SandboxProject(info: ProjectInfo) extends ParentProject(info) with IdeaPro
           // actions
           lazy val hello = task{println("running hello"); None}     
           lazy val printDefs = task{println(redis.getClass); None}
+          val jena = "com.hp.hpl.jena" % "jena" % "2.6.4" % "compile"
   })
 
   class WebappBuild(info: ProjectInfo) extends DefaultWebProject(info) with IdeaProject

@@ -7,8 +7,9 @@ import javax.jcr.observation.{Event, EventIterator, EventListener, EventListener
 import javax.jcr.security.{AccessControlPolicyIterator, AccessControlPolicy}
 import javax.jcr._
 import query.{Query, Row, RowIterator}
+import org.apache.jackrabbit.commons.JcrUtils
 
-abstract class Repo(val url: String) {
+abstract class Repo[T](val url: String) {
   var repo: Repository
   var user: String
   var password: String
@@ -60,7 +61,7 @@ object Repo {
   implicit def EventJournalItr2Iterator[A](i: EventIterator): Iterator[Event] = new Iterator[Event] with RangeIter {
     def iter = i;
 
-    def next: Event = iter.nextEvent.asInstanceOf[Event]
+    def next(): Event = iter.nextEvent.asInstanceOf[Event]
   }
 
   implicit def EventListenerItr2Iterator[A](i: EventListenerIterator): Iterator[EventListener] = new Iterator[EventListener] with RangeIter {
@@ -92,7 +93,7 @@ object Repo {
     }
     c(List(), node)
   }
-  def printItem(n: Item): Unit = println(n.getPath)
+  def printItem(n: Item): Unit = println(JcrUtils.toString(n))
 
   def printItem(n: Item, f:Item => String):String = {printItem(n); f(n)}
 

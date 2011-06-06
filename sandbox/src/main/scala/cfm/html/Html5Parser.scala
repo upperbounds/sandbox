@@ -1,13 +1,30 @@
 package cfm.html
 
-/**
- * Created by IntelliJ IDEA.
- * User: quadvillian
- * Date: 6/4/11
- * Time: 8:05 PM
- * To change this template use File | Settings | File Templates.
- */
+import nu.validator.htmlparser.common.XmlViolationPolicy;
+import nu.validator.htmlparser.sax.HtmlParser;
 
-class Html5Parser {
+import scala.xml.parsing.NoBindingFactoryAdapter;
+import javax.xml.parsers.SAXParser
+import org.xml.sax.InputSource
+import java.io.{InputStreamReader, InputStream}
+import scala.xml.Node
+;
 
+class HTML5Parser extends NoBindingFactoryAdapter {
+
+  override def loadXML(source :InputSource, p:SAXParser) = loadXML(source)
+
+
+  def loadXML(source: InputSource) = {
+
+    val reader = new HtmlParser
+    reader.setXmlPolicy(XmlViolationPolicy.ALLOW)
+    reader.setContentHandler(this)
+    reader.parse(source)
+    rootElem
+  }
+  def loadXML(source: InputStream): Node = {
+    loadXML(new InputSource(new InputStreamReader(source)))
+    //todo: close that stream
+  }
 }

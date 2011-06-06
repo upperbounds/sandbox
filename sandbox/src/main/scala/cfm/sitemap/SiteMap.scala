@@ -6,7 +6,8 @@ import scala.xml._
 import java.util.zip.GZIPInputStream
 
 import dispatch._
-import java.net.URI
+import javax.xml.datatype.XMLGregorianCalendar
+import java.net.{URL, URI}
 
 
 class SiteMap(host: String) {
@@ -24,4 +25,18 @@ class SiteMap(host: String) {
   def getUrls(n: Node) = (n \\ "url" \ "loc") map (_.text)
 
   def all() =  maps.foldLeft(List[String]())( (f, v) => if(v.endsWith(".gz")) getUrls(getFromZip(new URI(v).getPath)).toList ++ f else f )
+}
+
+class SiteMapIndex()
+
+class Location(location: URL, lastModified: Option[XMLGregorianCalendar], changeFrequency: Option[Frequency#Value], priority: Option[Double] ){
+
+  override def toString = "Location {url=" + location + ", lastModified=" +
+    lastModified + ", frequency=" + changeFrequency + ", priority=" + priority + "}"
+}
+
+object Frequency extends Frequency
+
+class Frequency extends Enumeration("always", "hourly", "daily", "weekly", "monthly", "yearly", "never") {
+  val Always, Hourly, Daily, Weekly, Monthly, Yearly, Never = Value
 }

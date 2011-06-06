@@ -2,7 +2,7 @@ package cfm.io
 
 import dispatch._
 import cfm.html.TagSoupFactoryAdapter
-import xml.Node
+import scala.xml.Node
 import java.io.InputStream
 
 object Http {
