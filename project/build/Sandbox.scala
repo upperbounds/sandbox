@@ -6,7 +6,7 @@ class SandboxProject(info: ProjectInfo) extends ParentProject(info) with IdeaPro
   val sandbox  = project("sandbox", "Sandbox", new DefaultProject(_) with IdeaProject{
       
         var jackrabbitVersion = "2.2.4"
-        val dispatchVersion = "0.8.0"
+        val dispatchVersion = "0.8.3"
           // dependencies 
         val redis = "com.redis" % "redisclient" % "2.8.0.RC7-1.4" % "compile"       
         val akkaRepo = "Akka Repo" at "http://akka.io/repository/"
@@ -31,7 +31,7 @@ class SandboxProject(info: ProjectInfo) extends ParentProject(info) with IdeaPro
 
         val google = "com.google.guava" % "guava" % "r09"
 
-        var dispatch = "net.databinder" % "dispatch-http_2.8.1" % dispatchVersion
+        var dispatch = "net.databinder" % "dispatch-http_2.9.0" % dispatchVersion
         lazy val commonsLogging = "commons-logging" % "commons-logging" % "1.0.3"
 
         val html5 = "nu.validator.htmlparser" % "htmlparser" % "1.2.1"

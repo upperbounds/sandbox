@@ -13,7 +13,7 @@ case class SiteMapEntry(url: URL, lastModified: Option[XMLGregorianCalendar])
 case class SiteMapIndex(sitemaps: Set[SiteMapEntry])
 case class SiteMap(loc: Set[Location])
 
-class Location(location: URL, lastModified: Option[XMLGregorianCalendar], changeFrequency: Option[Frequency#Value], priority: Option[Double] ){
+case class Location(location: URL, lastModified: Option[XMLGregorianCalendar], changeFrequency: Option[Frequency#Value], priority: Option[Double] ){
 
   override def toString = "Location {url=" + location + ", lastModified=" +
     lastModified + ", frequency=" + changeFrequency + ", priority=" + priority + "}"

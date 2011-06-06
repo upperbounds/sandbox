@@ -5,7 +5,6 @@ import org.apache.jackrabbit.rmi.client.ClientRepositoryFactory
 import javax.jcr.{SimpleCredentials, Credentials, Repository => JCRRepo}
 
 trait JCRAdaptor {
-  // type Repository <: JCRRepo
   val repo: JCRRepo
 }
 
@@ -24,7 +23,7 @@ class RMIRepoAdaptor(val host: String,
                      val userName: String,
                      val password: String) extends JCRAdaptor {
   def this() = {
-    this ("localhost", 1234, "crx", "crx.default", "admin", "admin")
+  this ("localhost", 1234, "crx", "crx.default", "admin", "admin")
   }
   private[this] def getRepo = {repo}
 
