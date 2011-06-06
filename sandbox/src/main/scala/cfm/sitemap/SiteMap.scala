@@ -6,28 +6,12 @@ import scala.xml._
 import java.util.zip.GZIPInputStream
 
 import dispatch._
-import javax.xml.datatype.XMLGregorianCalendar
 import java.net.{URL, URI}
+import javax.xml.datatype.{DatatypeFactory, XMLGregorianCalendar}
 
-
-class SiteMap(host: String) {
-
-  val maps: Seq[String] = Http.get(host, "sitemap.xml") \ "sitemap" map(f => (f \"loc").text)
-  //maps.map(f => Http.get(host, f))
-
-
-  def getFromZip(file: String): Node ={
-    val http = new Http()
-    val u = :/ (host) / file
-    http(u >> {(stm: InputStream, charset: String) => {XML.load(new GZIPInputStream(stm))} })
-  }
-
-  def getUrls(n: Node) = (n \\ "url" \ "loc") map (_.text)
-
-  def all() =  maps.foldLeft(List[String]())( (f, v) => if(v.endsWith(".gz")) getUrls(getFromZip(new URI(v).getPath)).toList ++ f else f )
-}
-
-class SiteMapIndex()
+case class SiteMapEntry(url: URL, lastModified: Option[XMLGregorianCalendar])
+case class SiteMapIndex(sitemaps: Set[SiteMapEntry])
+case class SiteMap(loc: Set[Location])
 
 class Location(location: URL, lastModified: Option[XMLGregorianCalendar], changeFrequency: Option[Frequency#Value], priority: Option[Double] ){
 
@@ -40,3 +24,29 @@ object Frequency extends Frequency
 class Frequency extends Enumeration("always", "hourly", "daily", "weekly", "monthly", "yearly", "never") {
   val Always, Hourly, Daily, Weekly, Monthly, Yearly, Never = Value
 }
+
+object SiteMap{
+  def fromXml(xml: Node) ={
+    new SiteMap((xml \\ "url").map(f => new Location(new URL((f \ "loc").text), None, None, None)).toSet)
+
+  }
+}
+
+object SiteMapIndex {
+  def fromXml(xml: Node) = new SiteMapIndex((xml \\ "sitemap").map(f => {
+      val lastModified = (f \ "lastmod").text
+      val lm = {
+      try {
+        Some(DatatypeFactory.newInstance.newXMLGregorianCalendar(lastModified))
+      }
+      catch {
+        case e: Exception => None
+      }
+      }
+    new SiteMapEntry(new URL((f \ "loc").text), lm)
+  }
+  ).toSet)
+
+}
+
+
