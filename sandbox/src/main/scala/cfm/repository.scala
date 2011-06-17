@@ -111,6 +111,8 @@ object Repo {
     def collect() = Repo.collect(n, f => true)
     def collect(a: Node => Boolean) = Repo.collect(n, a)
     def hasSNS(): Boolean = n.getNodes().exists(f => f.getIndex > 1)
+    def nodes() = n.getNodes()
+    def props() = n.getProperties()
   }
 
 }
