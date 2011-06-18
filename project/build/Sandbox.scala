@@ -63,6 +63,10 @@ class SandboxProject(info: ProjectInfo) extends ParentProject(info) with IdeaPro
           lazy val hello = task{println("running hello"); None}     
           lazy val printDefs = task{println(redis.getClass); None}
           val jena = "com.hp.hpl.jena" % "jena" % "2.6.4" % "compile"
+          val io = "com.github.scala-incubator.io" % "file_2.9.0" % "0.1.2"
+           val specs2 = "org.specs2" %% "specs2" % "1.3" % "test"
+     def specs2Framework = new TestFramework("org.specs2.runner.SpecsFramework")
+ override def testFrameworks = super.testFrameworks ++ Seq(specs2Framework)
   })
 
   class WebappBuild(info: ProjectInfo) extends DefaultWebProject(info) with IdeaProject
