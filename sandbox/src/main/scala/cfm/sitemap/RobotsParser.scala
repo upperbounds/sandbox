@@ -5,9 +5,10 @@ import util.parsing.combinator._
 class RobotsParser extends JavaTokenParsers{
 //override protected val whiteSpace = """""".r
 
-  def robots: Parser[Any] = sitemap | dis
+  def robots: Parser[Any] = (dis | rep(sitemap))
   def all : Parser[Any] =  agent ~ allow
-  def dis : Parser[Any] =  agent ~ (rep(disallow) | rep(allow))
+  def dis : Parser[Any] =  agent ~ rep(entry)
+  def entry:Parser[Any] =  (disallow | allow)
   def sitemap: Parser[Any] = "Sitemap"~":"~"[\\S]+".r
   def agent: Parser[Any] = "User-agent"~":"~"[\\S]+".r
   def disallow: Parser[Any] = {println("disallow called"); "Disallow"~":"~"[\\S]+".r}
