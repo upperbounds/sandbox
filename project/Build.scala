@@ -24,7 +24,6 @@ object Dependencies {
   val jcrRmi = "org.apache.jackrabbit" % "jackrabbit-jcr-rmi" % jackrabbitVersion % "compile"
   val slingJson = "org.apache.sling" % "org.apache.sling.commons.json" % "2.0.4-incubator" % "compile"
   //        val crxRmi = "com.day.crx" % "crx-rmi" % "2.0.0" % "compile"
-  //        val nymagRepo = "NYMAG Repo" at "http://build01.nymetro.com:8080/archiva/repository/internal/"
   val google = "com.google.guava" % "guava" % "r09"
   var dispatch = "net.databinder" % "dispatch-http_2.9.0" % dispatchVersion
   lazy val commonsLogging = "commons-logging" % "commons-logging" % "1.0.3"
@@ -68,8 +67,6 @@ object SandboxBuild extends Build {
   import Dependencies._
   import BuildSettings._
 
-  //import com.github.siasia._
-
   lazy val sandbox = Project("sandbox", file("sandbox"),
     settings = buildSettings ++ Seq(libraryDependencies := allDeps,
       resolvers := Seq("Akka Repo" at "http://akka.io/repository/"))
@@ -77,8 +74,5 @@ object SandboxBuild extends Build {
   lazy val web = Project("web", file("webapp"), settings = buildSettings ++ WebPlugin.webSettings ++ Seq(libraryDependencies := webAllDeps))
 
   lazy val browser = Project("repoBrowser", file("repobrowser"), settings = buildSettings)
-  //  lazy val myCMS = Project ("my-cms", file ("my-cms"),
-  //           settings = buildSettings ++ Seq (libraryDependencies := allDeps))
-  //  lazy val myTools = Project ("my-tools", file ("my-tools"),
-  //           settings = buildSettings) dependsOn (myCMS)
+
 }
