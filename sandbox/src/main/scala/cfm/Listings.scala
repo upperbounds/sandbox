@@ -5,7 +5,7 @@ import org.squeryl.customtypes._
 import org.squeryl.{Session, Schema}
 
 trait Domain[A] {
-  self: CustomType =>
+  self: CustomType[A] =>
   def label: String
 
   def validate(a: A)
@@ -75,7 +75,7 @@ class ColId(id: Int) extends IntField(id) with Domain[Int] {
 
 object Listing extends Schema {
   val listings = table[Listing]
-  val restaurants = from(listings)(p => where(p.clazz === "restaurants") select (p))
+//  val restaurants = from(listings)(p => where(p.clazz === "restaurants") select (p))
 
 }
 

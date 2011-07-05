@@ -18,7 +18,7 @@ object Dependencies {
   val dispatchVersion = "0.8.3"
 
   val redis = "com.redis" % "redisclient" % "2.8.0.RC7-1.4" % "compile"
-  val squerly = "org.squeryl" % "squeryl_2.8.0" % "0.9.4beta8" % "compile"
+  val squerly = "org.squeryl" % "squeryl_2.9.0-1" % "0.9.4" % "compile"
   val jackrabbit = "org.apache.jackrabbit" % "jackrabbit-core" % jackrabbitVersion % "compile"
   val slf4jLog4j = "org.slf4j" % "slf4j-log4j12" % "1.6.1" % "compile"
   val jcrRmi = "org.apache.jackrabbit" % "jackrabbit-jcr-rmi" % jackrabbitVersion % "compile"
@@ -35,6 +35,7 @@ object Dependencies {
   val jenaRepo = "Jena Repo" at "http://openjena.org/repo/"
   val xalan = "xalan" % "xalan" % "2.7.1" % "compile"
   val jcr = "javax.jcr" % "jcr" % "2.0" % "compile"
+  val scalazCore = "org.scalaz" %% "scalaz-core" % "6.0.1"
   // db drivers
   val mysqlDriver = "mysql" % "mysql-connector-java" % "5.1.9" % "compile"
   val h2 = "com.h2database" % "h2" % "1.2.127" % "provided"
@@ -54,7 +55,7 @@ object Dependencies {
   val scalaTest = "org.scalatest" % "scalatest" % "1.2" % "test"
 
 
-  val compileDeps = Seq(jackrabbit, jena, dispatch, jcrRmi, io, configy, jcr, squerly, html5, xalan, redis)
+  val compileDeps = Seq(jackrabbit, jena, dispatch, jcrRmi, io, configy, jcr, squerly, html5, xalan, redis, scalazCore)
   val testDeps = Seq(specs2)
   val allDeps = compileDeps ++ testDeps
 
