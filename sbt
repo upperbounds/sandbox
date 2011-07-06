@@ -2,4 +2,4 @@
 if test -f ~/.sbtconfig; then
   . ~/.sbtconfig
 fi
-exec java -Xmx512M -XX:MaxPermSize=512M ${SBT_OPTS} -jar `dirname $0`/sbt-launch.jar "$@"
+exec java -Xmx2048M -XX:MaxPermSize=512M ${SBT_OPTS} -jar `dirname $0`/sbt-launch.jar "$@"
