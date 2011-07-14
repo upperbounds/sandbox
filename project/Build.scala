@@ -20,6 +20,7 @@ object Dependencies {
   val redis = "com.redis" % "redisclient" % "2.8.0.RC7-1.4" % "compile"
   val squerly = "org.squeryl" % "squeryl_2.9.0-1" % "0.9.4" % "compile"
   val jackrabbit = "org.apache.jackrabbit" % "jackrabbit-core" % jackrabbitVersion % "compile"
+  val jackrabbitSpi = "org.apache.jackrabbit" % "jackrabbit-jcr2dav" % jackrabbitVersion % "compile"
   val slf4jLog4j = "org.slf4j" % "slf4j-log4j12" % "1.6.1" % "compile"
   val jcrRmi = "org.apache.jackrabbit" % "jackrabbit-jcr-rmi" % jackrabbitVersion % "compile"
   val slingJson = "org.apache.sling" % "org.apache.sling.commons.json" % "2.0.4-incubator" % "compile"
@@ -29,6 +30,7 @@ object Dependencies {
   lazy val commonsLogging = "commons-logging" % "commons-logging" % "1.0.3"
   val html5 = "nu.validator.htmlparser" % "htmlparser" % "1.2.1"
   val jena = "com.hp.hpl.jena" % "jena" % "2.6.4" % "compile"
+  val jenaTdb = "com.hp.hpl.jena" % "tdb" % "0.8.10" % "compile"
   val io = "com.github.scala-incubator.io" % "file_2.9.0" % "0.1.2"
   val specs2 = "org.specs2" %% "specs2" % "1.3" % "test"
   val configy = "net.lag" % "configgy" % "2.0.0" % "compile"
@@ -55,7 +57,7 @@ object Dependencies {
   val scalaTest = "org.scalatest" % "scalatest" % "1.2" % "test"
 
 
-  val compileDeps = Seq(jackrabbit, jena, dispatch, jcrRmi, io, configy, jcr, squerly, html5, xalan, redis, scalazCore)
+  val compileDeps = Seq(jackrabbit, jena, dispatch, jcrRmi, io, configy, jcr, squerly, html5, xalan, redis, scalazCore, jackrabbitSpi, jenaTdb)
   val testDeps = Seq(specs2)
   val allDeps = compileDeps ++ testDeps
 

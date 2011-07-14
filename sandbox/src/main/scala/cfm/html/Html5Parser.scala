@@ -10,7 +10,7 @@ import java.io.{InputStreamReader, InputStream}
 import scala.xml.Node
 ;
 
-class HTML5Parser extends NoBindingFactoryAdapter {
+object HTML5Parser extends NoBindingFactoryAdapter {
 
   override def loadXML(source :InputSource, p:SAXParser) = loadXML(source)
 
