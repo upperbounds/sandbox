@@ -57,7 +57,7 @@ object Dependencies {
   val scalaTest = "org.scalatest" % "scalatest" % "1.2" % "test"
 
 
-  val compileDeps = Seq(jackrabbit, jena, dispatch, jcrRmi, io, configy, jcr, squerly, html5, xalan, redis, scalazCore, jackrabbitSpi, jenaTdb)
+  val compileDeps = Seq(jackrabbit, jena, dispatch, jcrRmi, io, configy, jcr, squerly, html5, xalan, redis, scalazCore, jackrabbitSpi, jenaTdb, mysqlDriver)
   val testDeps = Seq(specs2)
   val allDeps = compileDeps ++ testDeps
 
