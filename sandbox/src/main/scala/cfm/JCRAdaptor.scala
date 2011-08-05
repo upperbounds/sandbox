@@ -41,6 +41,10 @@ class RMIRepoAdaptor(val host: String,
   val s = repo.login(new SimpleCredentials(userName, password.toCharArray), workSpace)
 }
 
+object RMIRepoAdaptor {
+  def apply() = new RMIRepoAdaptor()
+}
+
 class DavRepoAdaptor(val url: String, val workSpace: String, val userName: String, val password: String) extends JCRAdaptor {
 
   def this() = this ("http://localhost:4502/crx/server", "crx.default", "admin", "admin")
@@ -53,10 +57,8 @@ class DavRepoAdaptor(val url: String, val workSpace: String, val userName: Strin
     props.put("org.apache.jackrabbit.spi2davex.uri", url)
     new Jcr2davRepositoryFactory().getRepository(props)
   }
-
-
 }
 
-object RMIRepoAdaptor {
-  def apply() = new RMIRepoAdaptor()
+object DavRepoAdaptor {
+  def apply = new DavRepoAdaptor()
 }

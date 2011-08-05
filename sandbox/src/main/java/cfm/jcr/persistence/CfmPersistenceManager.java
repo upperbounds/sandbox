@@ -6,11 +6,13 @@ import org.apache.jackrabbit.core.persistence.PMContext;
 import org.apache.jackrabbit.core.persistence.PersistenceManager;
 import org.apache.jackrabbit.core.state.*;
 
+import org.bouncycastle.util.test.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.xml.soap.Node;
 import java.awt.*;
+import java.io.File;
 
 
 public class CfmPersistenceManager implements PersistenceManager {
@@ -33,7 +35,11 @@ public class CfmPersistenceManager implements PersistenceManager {
         //log.debug("NodeTypeRegistry: {}", pmContext.getNodeTypeRegistry());
         log.debug("RootNodeId: {}", pmContext.getRootNodeId());
         this.pmContext = pmContext;
+
         rootNodeId = pmContext.getRootNodeId();
+
+        File db = new File("test.db");
+
 
         // do something here
     }
