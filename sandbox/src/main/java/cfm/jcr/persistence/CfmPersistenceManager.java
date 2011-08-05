@@ -6,13 +6,13 @@ import org.apache.jackrabbit.core.persistence.PMContext;
 import org.apache.jackrabbit.core.persistence.PersistenceManager;
 import org.apache.jackrabbit.core.state.*;
 
-import org.bouncycastle.util.test.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.xml.soap.Node;
 import java.awt.*;
 import java.io.File;
+import java.util.jar.Attributes;
 
 
 public class CfmPersistenceManager implements PersistenceManager {
@@ -47,14 +47,17 @@ public class CfmPersistenceManager implements PersistenceManager {
     @Override
     public void close() throws Exception {
         log.debug("close called");
-
     }
 
     @Override
     public NodeState createNew(NodeId nodeId) {
         log.debug("create node called for {}", nodeId);
-        return null;
+//        return new NodeState(nodeId, new Name(), StaticNodes.get(nodeId), null, 1, false);
+        NodeState state = new NodeState(nodeId, null, null, NodeState.STATUS_EXISTING, false);
+        state.setParentId(rootNodeId);
+        return state;
     }
+
 
     @Override
     public PropertyState createNew(PropertyId propertyId) {
@@ -65,7 +68,10 @@ public class CfmPersistenceManager implements PersistenceManager {
     @Override
     public NodeState load(NodeId nodeId) throws NoSuchItemStateException, ItemStateException {
         log.debug("load called for node {}", nodeId);
-        return null;
+        NodeState state = new NodeState(nodeId, null, null, NodeState.STATUS_NEW, false);
+        state.setParentId(rootNodeId);
+
+        return state;
     }
 
     @Override
@@ -83,11 +89,7 @@ public class CfmPersistenceManager implements PersistenceManager {
     @Override
     public boolean exists(NodeId nodeId) throws ItemStateException {
         log.debug("exists called for node {}", nodeId);
-        if(nodeId.equals(rootNodeId)){
-            return true;
-        }
-
-        return false;
+        return StaticNodes.exists(nodeId);
     }
 
     @Override
@@ -99,7 +101,6 @@ public class CfmPersistenceManager implements PersistenceManager {
     @Override
     public boolean existsReferencesTo(NodeId nodeId) throws ItemStateException {
         log.debug("existsReferencesTo called for node {}", nodeId);
-
         return false;
     }
 
@@ -111,7 +112,7 @@ public class CfmPersistenceManager implements PersistenceManager {
 
     @Override
     public void checkConsistency(String[] strings, boolean b, boolean b1) {
-        Object[] args = {strings, b,b1};
+        Object[] args = {strings, b, b1};
         log.debug("checkConsistency called for changelog {}, {} {}", args);
     }
 
