@@ -19,6 +19,10 @@ object HTML5Parser extends NoBindingFactoryAdapter {
 
     val reader = new HtmlParser
     reader.setXmlPolicy(XmlViolationPolicy.ALLOW)
+    reader.setCommentPolicy(XmlViolationPolicy.ALLOW)
+      reader.setContentNonXmlCharPolicy(XmlViolationPolicy.ALLOW)
+      reader.setContentSpacePolicy(XmlViolationPolicy.FATAL)
+      reader.setNamePolicy(XmlViolationPolicy.ALLOW)
     reader.setContentHandler(this)
     reader.parse(source)
     rootElem
