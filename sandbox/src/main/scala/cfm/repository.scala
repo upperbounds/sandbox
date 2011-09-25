@@ -8,6 +8,7 @@ import javax.jcr.security.{AccessControlPolicyIterator, AccessControlPolicy}
 import javax.jcr._
 import query.{Query, Row, RowIterator}
 import org.apache.jackrabbit.commons.JcrUtils
+import cfm.Repo.RichQuery
 
 abstract class Repo[T](val url: String) {
   var repo: Repository
@@ -78,6 +79,8 @@ object Repo {
 
   implicit def sess2RichSession(s: Session) = new RichSession(s)
 
+  implicit def query2RichQuery(q: Query) = new RichQuery(q)
+
   def ls(path: String)(implicit s: Session) {
     val t = s.getRootNode.getNode(path)
     for (p <- t.getNodes) {
@@ -110,9 +113,34 @@ object Repo {
     def sql(query: String) = n.getSession.getWorkspace.getQueryManager.createQuery(query, Query.SQL)
     def collect() = Repo.collect(n, f => true)
     def collect(a: Node => Boolean) = Repo.collect(n, a)
-    def hasSNS(): Boolean = n.getNodes().exists(f => f.getIndex > 1)
-    def nodes() = n.getNodes()
-    def props() = n.getProperties()
+    def hasSNS(): Boolean = n.getNodes.exists(f => f.getIndex > 1)
+    def nodes() = n.getNodes
+    def props() = n.getProperties
+
+    def \() = n.getNodes
+
+    def \(c: String) = n.getNode(c)
+
+    def <@(p: String) = n.getProperty(p)
   }
+
+  class RichQuery(q: Query){
+
+    def limit(l: Long) ={
+      q.setLimit(l)
+      q
+    }
+    def offset(l: Long) ={
+      q.setOffset(l)
+      q
+    }
+
+    def bind(s: String, v: Value) = {
+      q.bindValue(s, v)
+      q
+    }
+
+  }
+
 
 }
